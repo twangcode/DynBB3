@@ -104,13 +104,8 @@ class spread():
 		return self.name
 	def print_data(self):
 		print self.data
-	def get_data(self, start_dt=None, end_dt=None):
-		if not start_dt and not end_dt:
-			start = pd.to_datetime(start_dt)
-			end = pd.to_datetime(end_dt)
-			return self.data[start_dt:end_dt]
-		else:
-			 return self.data
+	def get_data(self):
+		return self.data
 
 	# Get Hedge Ratio:
 	def get_hedge_ratio(self, ratio_dict):
