@@ -68,7 +68,7 @@ def generate_ratio_list(spread_name, ratio_dict):
 	# Normalize ratio_list and return it 	
 	return [round(x / min(ratio_list), 3) for x in ratio_list]
 
-def EE_backtest(data, entry, exit, slippage):
+def backtest(data, entry, exit, slippage):
 	# Generate bollinger bands accoring to EMA and STDDEV:
 	data['UpperBand'] = data['2D_EMA'] + data['2D_STDDEV'] * entry
 	data['LowerBand'] = data['2D_EMA'] - data['2D_STDDEV'] * entry
