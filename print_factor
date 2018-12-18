@@ -1,0 +1,30 @@
+#!/bin/sh
+now=$(date +"%m_%d_%Y")
+>output/symbol_list.data
+for symbol in $(cat input/symbol_list.csv)
+do 
+	factor_symbol=$(findc $symbol | grep ^$symbol | awk '{print $10}')
+	factor=$(snapshot $factor_symbol last | awk -F= '{print $2}')
+	if [ $symbol = "TENS_J6" ]
+	then
+		symbol="XJ6"
+	elif [ $symbol = "TENS_A6" ]
+	then
+		symbol="XA6"
+	elif [ $symbol = "TENS_B6" ]
+	then
+		symbol="XB6"
+	elif [ $symbol = "TENS_C6" ]
+	then
+		symbol="XC6"
+	elif [ $symbol = "TENS_E6" ]
+	then
+		symbol="XE6"
+	elif [ $symbol = "VX3-VX1" ]
+	then
+		symbol="VX3_1"
+	 
+	fi
+	echo $symbol $factor >> output/symbol_list.data
+
+done
