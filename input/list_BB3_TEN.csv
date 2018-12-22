@@ -1,3 +1,8 @@
+name,slippage
+name,slippage
+name,slippage
+name,slippage
+name,slippage
 S:BB3_TEN:BT-CGB-XC6+XJ6.data,25
 S:BB3_TEN:BT-GBL-XE6+XJ6.data,25
 S:BB3_TEN:BT-R-XB6+XJ6.data,25
@@ -19,7 +24,7 @@ S:BB3_TEN:GBL-TN+XE6.data,15
 S:BB3_TEN:GBL-UB+XE6.data,15
 S:BB3_TEN:GBL-US10Y+XE6.data,15
 S:BB3_TEN:GBL-ZB+XE6.data,15
-S:BB3_TEN:GBL-ZN+XE6.data,15
+S:BB3_TEN:GBL-ZN+XE6.data,15.0
 S:BB3_TEN:GBS-ZT+XE6.data,30
 S:BB3_TEN:GBX-R-XB6+XE6.data,15
 S:BB3_TEN:GBX-UB+XE6.data,15

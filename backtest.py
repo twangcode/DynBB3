@@ -41,6 +41,8 @@ def main(argv):
 	print 'sharpe_threshold is: ', sharpe_threshold
 	print 'length is: ', length
 	print 'Hedge Ratios are: ', test_spread.get_hedge_ratio()
+	print 'Start date: ', test_spread.get_start_date()
+	print 'End date: ', test_spread.get_end_date()
 
 	for entry in entries:
 		for exit in exits:

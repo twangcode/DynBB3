@@ -13,7 +13,7 @@ class spread():
 		self.length = length
 
 		# Parse Data:
-		self.data = data_parser(filename, length)
+		self.data = data_parser(filename)
 
 		# Hedge Ratio:
 		self.hedge_ratio = None
