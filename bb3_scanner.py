@@ -1,7 +1,7 @@
 import pandas as pd
 import csv
-from spread import *
-from DynBB3Tools import *
+from lib.spread import *
+from lib.DynBB3Tools import *
 import time
 
 ratio_dict = generate_factor_dict()
