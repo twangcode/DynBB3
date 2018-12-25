@@ -1,16 +1,8 @@
+#!/usr/bin/python2
+
 import sys, getopt
 import pandas as pd
-
-def modifySlippage(filename, new_slippage):
-	# decide which file to read:
-	BB3_type = filename.split(':')[1]
-	bb3_list_filename = 'input/list_{}.csv'.format(BB3_type) 
-	# read bb3 list input file into a dataframe
-	df = pd.read_csv(bb3_list_filename,header=None,names=['name','slippage'], index_col=['name'])
-	# do the modification
-	df.ix[filename] = new_slippage
-	# write it back to the original bb3_list_file
-	df.to_csv(bb3_list_filename, header=False)
+from lib.DynBB3Tools import *
 
 def main(argv):
 	filename = ''

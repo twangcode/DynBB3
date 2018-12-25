@@ -1,6 +1,8 @@
+#!/usr/bin/python2
+
 import sys, getopt
-from spread import *
-from modifySlippage import *
+from lib.spread import *
+from lib.DynBB3Tools import *
 
 def main(argv):
 	
