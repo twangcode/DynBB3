@@ -1,5 +1,6 @@
 import sys, getopt
 from spread import *
+from modifySlippage import *
 
 def main(argv):
 	
@@ -56,6 +57,14 @@ def main(argv):
 				print "file IO error{0}: {1}".format(e.errno, e.strerror)
 				print 'backtest.py -f filename -s slippage -r sharpe_threshold -l length'
 				sys.exit(2)
+	
+	try:
+		modifySlippage(filename, slippage)
+		print "modified {} slippage to {}".format(filename, slippage)
+	except:
+		print "something went wrong trying to modify {} slippage".format(filename)
+		sys.exit(2)
+	
 				
 		
 	

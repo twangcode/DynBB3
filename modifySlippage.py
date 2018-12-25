@@ -10,7 +10,7 @@ def modifySlippage(filename, new_slippage):
 	# do the modification
 	df.ix[filename] = new_slippage
 	# write it back to the original bb3_list_file
-	df.to_csv(bb3_list_filename)
+	df.to_csv(bb3_list_filename, header=False)
 
 def main(argv):
 	filename = ''
