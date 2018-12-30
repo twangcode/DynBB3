@@ -10,7 +10,7 @@ def main(argv):
 	filename = ''
 	slippage = 10
 	sharpe_threshold = 0
-	length = '6M'
+	length = '180D'
 	try:
 		opts, args = getopt.getopt(argv, 'hf:s:r:l:')
 	except getopt.GetoptError:

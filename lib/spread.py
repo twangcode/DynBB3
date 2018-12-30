@@ -5,7 +5,7 @@ from DynBB3Tools import *
 RATIO_DICT = None
 
 class spread():
-	def __init__(self, filename, length='6M', start_date=None, end_date=None):
+	def __init__(self, filename, length='180D', start_date=None, end_date=None):
 		# read in attributes from args 
 		self.name = filename.split(':')[2][:-5]
 		self.start_date = start_date
